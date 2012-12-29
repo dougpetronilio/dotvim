@@ -87,9 +87,9 @@ colors molokai
 """}}}
 
 """ taglist {{{
-let Tlist_Show_Menu = 1
-let Tlist_Use_Right_Window = 1
-let Tlist_Show_One_File = 1
+"let Tlist_Show_Menu = 1
+"let Tlist_Use_Right_Window = 1
+"let Tlist_Show_One_File = 1
 """}}}
 
 """ minibufexpl {{{
