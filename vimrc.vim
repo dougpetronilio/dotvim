@@ -10,8 +10,8 @@ call pathogen#infect()
 """ options {{{
 
 "" gui {{{
-set guioptions-=T
-set guioptions+=m
+"set guioptions-=T
+"set guioptions+=m
 ""}}}
 
 "" indent {{{
