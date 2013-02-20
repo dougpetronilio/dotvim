@@ -171,3 +171,6 @@ let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ."
 "nmap <F11>  :TrinityToggleNERDTree<CR>
 """}}}
 
+""" syntastic {{{ 
+let g:syntastic_php_checkers=['php', 'phpmd']
+"""}}}
