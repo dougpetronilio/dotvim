@@ -10,7 +10,7 @@ call pathogen#infect()
 """ options {{{
 
 "" gui {{{
-"set guioptions-=T
+set guioptions-=T
 "set guioptions+=m
 ""}}}
 
@@ -46,6 +46,11 @@ set number
 " required for some plugins. eg: snipMate and matchit
 filetype plugin indent on
 ""}}}
+
+"" filetype for some file names {{{
+autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+autocmd BufNewFile,BufRead *.coffee.* set filetype=coffee
+"" }}}
 
 "" map for navigation in insert mode {{{
 "iunmap <c-h>
