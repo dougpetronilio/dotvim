@@ -7,6 +7,8 @@ call pathogen#infect()
 :Helptags
 """}}}
 
+set nocompatible
+
 """ vim-airline (powerline replacement) {{{
 let g:airline_powerline_fonts = 1
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
@@ -298,4 +300,9 @@ autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bu
 
 """ nerdtree-tabs {{{
 let g:nerdtree_tabs_open_on_gui_startup = 0
+""" }}}
+
+""" ultisnips {{{
+let g:UltiSnipsUsePythonVersion = 2
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "my-snippets"]
 """ }}}
