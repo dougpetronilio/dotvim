@@ -7,10 +7,40 @@ call pathogen#infect()
 :Helptags
 """}}}
 
+""" powerline {{{
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+set rtp+=~/opt/powerline/powerline/bindings/vim
+set laststatus=2 " Always display the statusline in all windows
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)"
+
+if ! has('gui_running')
+  set ttimeoutlen=10
+  augroup FastEscape
+    autocmd!
+    au InsertEnter * set timeoutlen=0
+    au InsertLeave * set timeoutlen=1000
+  augroup END
+endif
+"""
+
 """ options {{{
 
 "" gui {{{
 set guioptions-=T
+
+if has("gui_running")
+  " GUI is running or is about to start.
+  " Maximize gvim window (for an alternative on Windows, see simalt below).
+  set lines=999 columns=999
+"else
+  "" This is console Vim.
+  "if exists("+lines")
+    "set lines=50
+  "endif
+  "if exists("+columns")
+    "set columns=100
+  "endif
+endif
 "set guioptions+=m
 ""}}}
 
@@ -39,7 +69,7 @@ set hlsearch
 ""}}}
 
 "" numbers, lines, ... {{{
-set number
+set nonumber
 ""}}}
 
 "" filetype {{{
@@ -87,8 +117,9 @@ map <silent> <F11> :call ToggleFullscreen()<CR>
 """ }}}
 
 """ molokai {{{
-let g:molokai_original = 1
+let g:molokai_original = 0
 colors molokai
+"colors argokai
 """}}}
 
 """ taglist {{{
