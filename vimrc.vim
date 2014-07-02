@@ -210,3 +210,8 @@ let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ."
 """ syntastic {{{ 
 let g:syntastic_php_checkers=['php', 'phpmd']
 """}}}
+
+""" command-t {{{
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+""" }}}
