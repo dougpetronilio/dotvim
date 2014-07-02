@@ -7,20 +7,12 @@ call pathogen#infect()
 :Helptags
 """}}}
 
-""" powerline {{{
+""" vim-airline (powerline replacement) {{{
+let g:airline_powerline_fonts = 1
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
-set rtp+=~/opt/powerline/powerline/bindings/vim
 set laststatus=2 " Always display the statusline in all windows
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)"
 
-if ! has('gui_running')
-  set ttimeoutlen=10
-  augroup FastEscape
-    autocmd!
-    au InsertEnter * set timeoutlen=0
-    au InsertLeave * set timeoutlen=1000
-  augroup END
-endif
 """
 
 """ options {{{
