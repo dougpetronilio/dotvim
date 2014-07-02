@@ -52,3 +52,6 @@
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "bundle/minibufexpl.vim"]
+	path = bundle/minibufexpl.vim
+	url = https://github.com/fholgado/minibufexpl.vim.git
