@@ -215,3 +215,7 @@ let g:syntastic_php_checkers=['php', 'phpmd']
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 """ }}}
+
+""" ag (ack replacement) for text searching (like grep) {{{
+let g:ackprg="ag --nogroup --nocolor --column"
+""" }}}
