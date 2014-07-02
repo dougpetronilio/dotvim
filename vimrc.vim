@@ -219,3 +219,9 @@ autocmd FileType html,css EmmetInstall
 """ ag (ack replacement) for text searching (like grep) {{{
 let g:ackprg="ag --nogroup --nocolor --column"
 """ }}}
+
+"""" closetag {{{
+" original autocmd from documentation: autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
+autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
+autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
+""" }}}
