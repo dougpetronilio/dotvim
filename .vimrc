@@ -78,12 +78,17 @@ autocmd BufNewFile,BufRead *.coffee.* set filetype=coffee
 
 "" map for navigation in insert mode {{{
 "iunmap <c-h>
-"inoremap <c-h> <left>
-"inoremap <c-j> <down>
-"inoremap <c-k> <up>
-"inoremap <c-l> <right>
+"vnoremap <c-h> <left>
+"vnoremap <c-j> <down>
+"vnoremap <c-k> <up>
+"vnoremap <c-l> <right>
 ""}}}
 
+"" map for window navigation {{{
+noremap <c-k> <c-w>k
+noremap <c-j> <c-w>j
+noremap <c-h> <c-w>h
+noremap <c-l> <c-w>l
 """}}}
 
 "" map ct-bs and ct-del to delete words
@@ -114,23 +119,6 @@ map <silent> <F11> :call ToggleFullscreen()<CR>
 let g:molokai_original = 0
 colors molokai
 "colors argokai
-"""}}}
-
-""" taglist {{{
-"let Tlist_Show_Menu = 1
-"let Tlist_Use_Right_Window = 1
-"let Tlist_Show_One_File = 1
-"""}}}
-
-""" minibufexpl {{{
-let g:miniBufExplMapWindowNavVim = 1
-"let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1
-""" }}}
-
-""" snipMate {{{
-"set runtimepath+=~/share/vim/snipMate/after
 """}}}
 
 """ neocomplcache {{{
