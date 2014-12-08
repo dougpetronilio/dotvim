@@ -10,7 +10,7 @@ call pathogen#infect()
 set nocompatible
 
 """ vim-airline (powerline replacement) {{{
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 set laststatus=2 " Always display the statusline in all windows
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)"
@@ -116,9 +116,12 @@ map <silent> <F11> :call ToggleFullscreen()<CR>
 """ }}}
 
 """ molokai {{{
-let g:molokai_original = 0
-colors molokai
-"colors argokai
+let g:molokai_original = 1 
+"colorscheme molokai
+"colorscheme darkblue  
+"colorscheme argokai
+colorscheme vividchalk
+"colorscheme candy
 """}}}
 
 """ neocomplcache {{{
@@ -294,3 +297,5 @@ let g:nerdtree_tabs_open_on_gui_startup = 0
 let g:UltiSnipsUsePythonVersion = 2
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "my-snippets"]
 """ }}}
+set number
+syntax on
