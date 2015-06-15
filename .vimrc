@@ -297,5 +297,10 @@ let g:nerdtree_tabs_open_on_gui_startup = 0
 let g:UltiSnipsUsePythonVersion = 2
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "my-snippets"]
 """ }}}
+
+let jshint2_save = 1
+let jshint2_read = 1
+set runtimepath+=~/.vim/bundle/jshint2.vim/
+
 set number
 syntax on
