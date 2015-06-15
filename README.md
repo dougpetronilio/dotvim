@@ -1,8 +1,22 @@
-# ctrlp.vim
-Fuzzy __file__, __buffer__, __mru__, __tag__, ... finder for Vim.
+dotvim
+======
 
-* [**Project's homepage**][1]
-* [**Main git repository**][2]
+this is my .vim directory with my vim scripts/plugins configurations
 
-[1]: http://kien.github.com/ctrlp.vim
-[2]: https://github.com/kien/ctrlp.vim
+to use:
+
+clone this repository at ~/.vim
+
+    git clone https://github.com/pablobender/dotvim.git ~/.vim 
+
+run:
+
+    git submodule update --init
+
+
+link or copy the vimrc.vim to ~/.vimrc
+
+    ln -s ~/.vim/vimrc.vim ~/.vimrc
+
+
+voila! now vim is more powerful ;-)
